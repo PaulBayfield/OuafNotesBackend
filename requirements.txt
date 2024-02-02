@@ -1,0 +1,4 @@
+quart
+python-dotenv
+aiohttp
+bs4
