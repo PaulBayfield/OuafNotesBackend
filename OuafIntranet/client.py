@@ -149,6 +149,9 @@ class Client(CAS):
 
             result = {}
             for d in data:
+                if not d.get("detailsURL", None):
+                    continue
+
                 details: Details = await self.noteInfo(d["detailsURL"])
 
                 matiere = d["matiere"]
